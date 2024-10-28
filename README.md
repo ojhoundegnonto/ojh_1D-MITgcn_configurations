@@ -4,21 +4,14 @@
 <h1>Configurations for the present work</h1>
 <h2>Before Conpilation</h2>
 
-# SIZE.h
+### SIZE.h
 
 In the present study, the model vetical levels are set to 70. Thus, the file "SIZE.h" is edited so that `Nr = 70`.
 
-# package.conf
+### package.conf
 
-The file of `package.conf` was edited with the following content:
-`gfd
-kpp
-seaice
-exf
-diagnostics
-mnc
-timeave
-`
+The file of `package.conf` was edited with the following content: `gfd`, `kpp`, `seaice`, `exf`, `diagnostics` and `mnc`.
+`timeave`
 
 <h2>After Compilation</h2>
 <h1>Example from the present work</h1>
