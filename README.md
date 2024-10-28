@@ -10,8 +10,7 @@ In the present study, the model vetical levels are set to 70. Thus, the file "SI
 
 ### package.conf
 
-The file of `package.conf` was edited with the following content: `gfd`, `kpp`, `seaice`, `exf`, `diagnostics` and `mnc`.
-`timeave`
+The file of `package.conf` was edited with the following content: `gfd`, `kpp`, `seaice`, `exf`, `diagnostics`, `mnc` and `timeave`
 
 <h2>After Compilation</h2>
 <h1>Example from the present work</h1>
