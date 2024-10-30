@@ -14,9 +14,7 @@ In the present study, the model vetical levels are set to 70. Thus, the file "SI
 The file of `package.conf` was edited with the following content: `gfd`, `kpp`, `seaice`, `exf`, `diagnostics`, `mnc` and `timeave`
 
 <h2>After Compilation</h2>
-<h1>Example from the present work</h1>
-
-<h1>Results</h1>
+<h1>Results: Example from the present work</h1>
 
 In the results, we include the NetCDF file of the model output for variables used in the present analysis. The NetCDF file include the following variables:
 
