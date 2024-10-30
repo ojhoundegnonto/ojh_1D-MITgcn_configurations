@@ -1,4 +1,5 @@
 <h1> The MITgcm</h1>
+
 <h1>How to install?</h1>
 <h1>Docker image to run the 1D ocean-ice column model</h1>
 <h1>Configurations for the present work</h1>
@@ -14,3 +15,34 @@ The file of `package.conf` was edited with the following content: `gfd`, `kpp`, 
 
 <h2>After Compilation</h2>
 <h1>Example from the present work</h1>
+
+<h1>Results</h1>
+In the results, we include the netcdf file of the model output for variables used in the present analysis. The netcdf file include the following variables:
+	Longitude          
+	Latitude
+	Temp
+	Sal 
+	ETA 
+	Ice_thickness
+	Ice_coverage
+	Ice_EmPmR
+	Ice_Qnet
+	Ice_Qsw
+	EXFhs
+	EXFhl
+	EXFempmr
+	EXFpreci
+	EXFevap
+	EXFaqh
+	EXFatemp
+	EXFswdn
+	EXFlwdn
+	EXFvwind
+	EXFuwind
+	EXFqnet
+	EXFswnet
+	EXFlwnet
+	SIqnet
+	SIqsw
+	SIqneto
+	SIqneti
