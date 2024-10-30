@@ -3,15 +3,19 @@
 <h1>How to install?</h1>
 <h1>Docker image to run the 1D ocean-ice column model</h1>
 <h1>Configurations for the present work</h1>
+
 <h2>Before Conpilation</h2>
+In the present study, the model vetical levels are set to 70. Thus, before the model source code compilation, the file `SIZE.h` was edited so that `Nr = 70`. In addition, the file of `package.conf` was edited with the following content: `gfd`, `kpp`, `seaice`, `exf`, `diagnostics`, `mnc` and `timeave`.
 
-### SIZE.h
-
-In the present study, the model vetical levels are set to 70. Thus, the file "SIZE.h" is edited so that `Nr = 70`.
-
-### package.conf
-
-The file of `package.conf` was edited with the following content: `gfd`, `kpp`, `seaice`, `exf`, `diagnostics`, `mnc` and `timeave`
+| Name          | Definition                                                                                                                               |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `gfd`         | -                                                                                                                                        |
+| `kpp`         | -                                                                                                                                        |
+| `seaice`      | -                                                                                                                                        |
+| `exf`         | This allow the model to read the external forcing data file. In the present, the external forcing data are the atmospheric forcing data. |
+| `diagnostics` | -                                                                                                                                        |
+| `mnc`         | This allow saving the model output in NetCDF file format                                                                                 |
+| `timeave`     | -                                                                                                                                        |
 
 <h2>After Compilation</h2>
 <h1>Results: Example from the present work</h1>
