@@ -22,8 +22,8 @@ In the results, we include the NetCDF file of the model output for variables use
 
 | Name            | Definition                                                     |
 | --------------- | -------------------------------------------------------------- |
-| `Longitude`     | Longitude coordinates at each cCTD cast locations, degree_east |
-| `Latitude`      | Latitude coordinates at each cCTD cast locations, degree_north |
+| `Longitude`     | Longitude coordinates at each cCTD cast locations |
+| `Latitude`      | Latitude coordinates at each cCTD cast locations |
 | `Temp`          | Potential temperature                                          |
 | `Sal`           | Salinity                                                       |
 | `ETA`           | Free surface r-anomaly                                         |
