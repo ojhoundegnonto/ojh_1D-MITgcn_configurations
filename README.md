@@ -17,32 +17,36 @@ The file of `package.conf` was edited with the following content: `gfd`, `kpp`, 
 <h1>Example from the present work</h1>
 
 <h1>Results</h1>
+
 In the results, we include the netcdf file of the model output for variables used in the present analysis. The netcdf file include the following variables:
-	Longitude          
-	Latitude
-	Temp
-	Sal 
-	ETA 
-	Ice_thickness
-	Ice_coverage
-	Ice_EmPmR
-	Ice_Qnet
-	Ice_Qsw
-	EXFhs
-	EXFhl
-	EXFempmr
-	EXFpreci
-	EXFevap
-	EXFaqh
-	EXFatemp
-	EXFswdn
-	EXFlwdn
-	EXFvwind
-	EXFuwind
-	EXFqnet
-	EXFswnet
-	EXFlwnet
-	SIqnet
-	SIqsw
-	SIqneto
-	SIqneti
+
+| Name | Definition | 
+| ------------- | ------------- |
+| `Longitude`  |  Longitude coordinates at each cCTD cast locations, degree_east |
+| `Latitude` | Latitude coordinates at each cCTD cast locations, degree_north    |
+| Temp |   Potential temperature     |
+| Sal  |   Salinity      |
+| ETA  |   Free surface r-anomaly      |
+| Ice_thickness |   -      |
+| Ice_coverage |   -      |
+| Ice_EmPmR |   -      |
+| Ice_Qnet |   -      |
+| Ice_Qsw |   -      |
+| EXFhs |   -      |
+| EXFhl |   -      |
+| EXFempmr |   -      |
+| EXFpreci |   -      |
+| EXFevap |   -      |
+| EXFaqh |   -      |
+| EXFatemp |   -      |
+| EXFswdn |   -      |
+| EXFlwdn |   -      |
+| EXFvwind |   -      |
+| EXFuwind |   -      |
+| EXFqnet |   -      |
+| EXFswnet |   -      |
+| EXFlwnet |   -      |
+| SIqnet |   -      |
+| SIqsw |   -      |
+| SIqneto |   -      |
+| SIqneti |   -      |
