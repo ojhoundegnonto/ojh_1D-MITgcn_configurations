@@ -5,6 +5,7 @@
 <h1>Configurations for the present work</h1>
 
 <h2>Before Conpilation</h2>
+
 In the present study, the model vetical levels are set to 70. Thus, before the model source code compilation, the file `SIZE.h` was edited so that `Nr = 70`. In addition, the file of `package.conf` was edited with the following content: `gfd`, `kpp`, `seaice`, `exf`, `diagnostics`, `mnc` and `timeave` (see the attached file of `SIZE.h` and `package.conf` in the folder of `code`).
 
 | Name          | Definition                                                                                                                                                                                                                                                                                                   |
