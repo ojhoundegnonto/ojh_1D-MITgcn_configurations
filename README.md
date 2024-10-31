@@ -30,8 +30,16 @@ The `data` file includes four main components: `PARM01`, `PARM02`, `PARM03`, `PA
 | ---------- | --------------------- | ----------------------------------------------------------------------- |
 | PARM03     | `startTime=0.0`       | set the simulation starting time as the same as indicated in `data.cal` |
 |            | `nTimeSteps= 3456`    | set the                                                                 |
-|            | `deltaTtracer=3600.0` | set the time derivative `dt` to hourl for each variable.                |
-|            | `deltaTClock =3600.0` |                                                                         |
+|            | `deltaTtracer=3600.0` | set the time derivative `dt` to hourly for each variable.               |
+|            | `deltaTClock =3600.0` | set the time derivative `dt` to hourly for the model time record.       |
+|            | `cAdjFreq=0.`         |                                                                         |
+|            | `abEps=0.1`           |                                                                         |
+|            | `tracForcingOutAB=1`  |                                                                         |
+|            | `pChkptFreq=0.`       |                                                                         |
+|            | `chkptFreq= 0.`       |                                                                         |
+|            | `umpFreq = 86400.`    |                                                                         |
+|            | `taveFreq = 2635000.` |                                                                         |
+|            | `monitorFreq=86400.`  |                                                                         |
 | PARM04     |                       |                                                                         |
 | PARM05     |                       |                                                                         |
 
