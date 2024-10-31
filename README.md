@@ -11,7 +11,7 @@ In the present study, the model vetical levels are set to 70. Thus, before the m
 | Name          | Definition                                                                                                                                                                                                                                                                                                                                  |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `gfd`         | -                                                                                                                                                                                                                                                                                                                                           |
-| `kpp`         | -                                                                                                                                                                                                                                                                                                                                           |
+| `kpp`         | This allows the model to run with the K-profile parameterization (KPP) module for for the vertical mixing and convection parameterizations.                                                                                                                                                                                                 |
 | `seaice`      | -                                                                                                                                                                                                                                                                                                                                           |
 | `exf`         | This allow the model to read the external forcing data file. In the present, the external forcing data are the atmospheric forcing data.                                                                                                                                                                                                    |
 | `diagnostics` | -                                                                                                                                                                                                                                                                                                                                           |
@@ -20,7 +20,7 @@ In the present study, the model vetical levels are set to 70. Thus, before the m
 
 <h2>After Compilation</h2>
 
-After the model's code source compilation, the `data`, `data.cal`, `data.diagnostics`, `data.exf` and `data.seaice` are edited as follow:
+After the model's code source compilation, the `data`, `data.cal`, `data.diagnostics`, `data.exf` and `data.seaice` are edited from the default files (from the native folder `Verification`) as follow:
 
 ### `data` file:
 
@@ -31,6 +31,8 @@ After the model's code source compilation, the `data`, `data.cal`, `data.diagnos
 ### `data.exf` file:
 
 ### `data.seaice` file:
+
+The parameter `SEAICE_mcPheePiston` is set `0.0001` to allow the model to run at `1 m` vertical resolution. Note that the default setiing is: `SEAICE_mcPheePiston= 0.0008749999999999999`.
 
 <h1>Results: Example from the present work</h1>
 
