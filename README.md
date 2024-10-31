@@ -4,7 +4,7 @@ The MIT General Circulation Model (MITgcm) is a sophisticated computational tool
 
 <h1>How to install?</h1>
 
-The MITgcm is developed to perform efficiently on a wide variety of computational platforms.
+The MITgcm is developed to perform efficiently on a wide variety of computational platforms. The processes to build and run the MITgcm is described on the MITgcm main page ([here](https://mitgcm.readthedocs.io/en/latest/overview/overview.html)) under the sections `3. getting Started with MITgcm` [here](https://mitgcm.readthedocs.io/en/latest/getting_started/getting_started.html) and `4. MITgcm Tutorial Example Experiments` [here](https://mitgcm.readthedocs.io/en/latest/examples/examples.html). For the purpose of our analysis, the model compiled and run inside a `Docker` image set to host the latest stable version of `Ubunto` OS. The `Docker` image configuration is provided below.
 
 <h1>Docker image to run the 1D ocean-ice column model</h1>
 
