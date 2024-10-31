@@ -1,5 +1,5 @@
 <h1> The MITgcm</h1>
-The MIT General Circulation Model (MITgcm) is a sophisticated computational tool developed for investigating atmospheric, oceanic, and climatic phenomena. Its innovative design utilizes mathematical similarities between fluid systems, allowing a single core algorithm to model both atmospheric and oceanic currents. This versatile approach enables researchers to study a wide range of Earth system processes using a unified framework. More detail can be found [!here](https://mitgcm.readthedocs.io/en/latest/overview/overview.html).
+The MIT General Circulation Model (MITgcm) is a sophisticated computational tool developed for investigating atmospheric, oceanic, and climatic phenomena. Its innovative design utilizes mathematical similarities between fluid systems, allowing a single core algorithm to model both atmospheric and oceanic currents. This versatile approach enables researchers to study a wide range of Earth system processes using a unified framework. More detail can be found [here](https://mitgcm.readthedocs.io/en/latest/overview/overview.html).
 <h1>How to install?</h1>
 <h1>Docker image to run the 1D ocean-ice column model</h1>
 <h1>Configurations for the present work</h1>
