@@ -1,5 +1,5 @@
 <h1> The MITgcm</h1>
-
+The MIT General Circulation Model (MITgcm) is a sophisticated computational tool developed for investigating atmospheric, oceanic, and climatic phenomena. Its innovative design utilizes mathematical similarities between fluid systems, allowing a single core algorithm to model both atmospheric and oceanic currents. This versatile approach enables researchers to study a wide range of Earth system processes using a unified framework. 
 <h1>How to install?</h1>
 <h1>Docker image to run the 1D ocean-ice column model</h1>
 <h1>Configurations for the present work</h1>
@@ -26,22 +26,22 @@ After the model's code source compilation, the `data`, `data.cal`, `data.diagnos
 
 The `data` file includes four main components: `PARM01`, `PARM02`, `PARM03`, `PARM04` and `PARM05` that hold specifics bloc instructions. The meaning of theses components can be found on the main page of MITgcm. In the present study, we edited the bloc instruction under `PARM03`, `PARM04` and `PARM05` from the default configurations as follow:
 
-| Components | Instructions          | Definitions                                                             |
-| ---------- | --------------------- | ----------------------------------------------------------------------- |
-| PARM03     | `startTime=0.0`       | set the simulation starting time as the same as indicated in `data.cal` |
-|            | `nTimeSteps= 3456`    | set the                                                                 |
-|            | `deltaTtracer=3600.0` | set the time derivative `dt` to hourly for each variable.               |
-|            | `deltaTClock =3600.0` | set the time derivative `dt` to hourly for the model time record.       |
-|            | `cAdjFreq=0.`         |                                                                         |
-|            | `abEps=0.1`           |                                                                         |
-|            | `tracForcingOutAB=1`  |                                                                         |
-|            | `pChkptFreq=0.`       |                                                                         |
-|            | `chkptFreq= 0.`       |                                                                         |
-|            | `umpFreq = 86400.`    |                                                                         |
-|            | `taveFreq = 2635000.` |                                                                         |
-|            | `monitorFreq=86400.`  |                                                                         |
-| PARM04     |                       |                                                                         |
-| PARM05     |                       |                                                                         |
+| Components | Instructions          | Definitions                                                                   |
+| ---------- | --------------------- | ----------------------------------------------------------------------------- |
+| PARM03     | `startTime=0.0`       | set the simulation starting time as the same as indicated in `data.cal` file. |
+|            | `nTimeSteps= 3456`    | set the                                                                       |
+|            | `deltaTtracer=3600.0` | set the time derivative `dt` to hourly for each variable.                     |
+|            | `deltaTClock =3600.0` | set the time derivative `dt` to hourly for the model time record.             |
+|            | `cAdjFreq=0.`         |                                                                               |
+|            | `abEps=0.1`           |                                                                               |
+|            | `tracForcingOutAB=1`  |                                                                               |
+|            | `pChkptFreq=0.`       |                                                                               |
+|            | `chkptFreq= 0.`       |                                                                               |
+|            | `umpFreq = 86400.`    |                                                                               |
+|            | `taveFreq = 2635000.` |                                                                               |
+|            | `monitorFreq=86400.`  |                                                                               |
+| PARM04     |                       |                                                                               |
+| PARM05     |                       |                                                                               |
 
 ### `data.cal` file:
 
