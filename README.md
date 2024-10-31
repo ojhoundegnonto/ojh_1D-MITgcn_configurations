@@ -11,7 +11,7 @@ In the present study, the model vetical levels are set to 70. Thus, before the m
 | Name          | Definition                                                                                                                                                                                                                                                                                                                                  |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `gfd`         | -                                                                                                                                                                                                                                                                                                                                           |
-| `kpp`         | This allows the model to run with the K-profile parameterization (KPP) module for for the vertical mixing and convection parameterizations.                                                                                                                                                                                                 |
+| `kpp`         | This allows the model to run with the K-profile parameterization (KPP) module for the vertical mixing and convection parameterizations.                                                                                                                                                                                                     |
 | `seaice`      | -                                                                                                                                                                                                                                                                                                                                           |
 | `exf`         | This allow the model to read the external forcing data file. In the present, the external forcing data are the atmospheric forcing data.                                                                                                                                                                                                    |
 | `diagnostics` | -                                                                                                                                                                                                                                                                                                                                           |
@@ -23,6 +23,17 @@ In the present study, the model vetical levels are set to 70. Thus, before the m
 After the model's code source compilation, the `data`, `data.cal`, `data.diagnostics`, `data.exf` and `data.seaice` are edited from the default files (from the native folder `Verification`) as follow:
 
 ### `data` file:
+
+The `data` file includes four main components: `PARM01`, `PARM02`, `PARM03`, `PARM04` and `PARM05` that hold specifics bloc instructions. The meaning of theses components can be found on the main page of MITgcm. In the present study, we edited the bloc instruction under `PARM03`, `PARM04` and `PARM05` from the default configurations as follow:
+
+| Components | Instructions        | Definitions |
+| ---------- | ------------------- | ----------- |
+| PARM03     | startTime=0.0       |             |
+|            | nTimeSteps= 3456    |             |
+|            | deltaTtracer=3600.0 |             |
+|            | deltaTClock =3600.0 |             |
+| PARM04     |                     |             |
+| PARM05     |                     |             |
 
 ### `data.cal` file:
 
