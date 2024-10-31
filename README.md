@@ -1,8 +1,6 @@
 <h1> The MITgcm</h1>
 
-The MIT General Circulation Model (MITgcm) is a sophisticated computational tool developed for investigating atmospheric, oceanic, and climatic phenomena. Its innovative design utilizes mathematical similarities between fluid systems, allowing a single core algorithm to model both atmospheric and oceanic currents. This versatile approach enables researchers to study a wide range of Earth system processes using a unified framework. The MITgcm has a non-hydrostatic capability that can be used to study both small-scale and large scale processes. It also resolved the sea ice, ocean-ice and land-ice dynamics processes.
-
-More detail can be found [here](https://mitgcm.readthedocs.io/en/latest/overview/overview.html).
+The MIT General Circulation Model (MITgcm) is a sophisticated computational tool developed for investigating atmospheric, oceanic, and climatic phenomena. Its innovative design utilizes mathematical similarities between fluid systems, allowing a single core algorithm to model both atmospheric and oceanic currents. This versatile approach enables researchers to study a wide range of Earth system processes using a unified framework. The MITgcm has a non-hydrostatic capability that can be used to study both small-scale and large scale processes. It also resolved the sea ice, ocean-ice and land-ice dynamics processes. More detail can be found [here](https://mitgcm.readthedocs.io/en/latest/overview/overview.html). Additional documentation on the MITgcm features and to use it can also be foud [here](https://readthedocs.org/projects/mitgcm/downloads/pdf/latest/).
 
 <h1>How to install?</h1>
 
@@ -34,26 +32,31 @@ After the model's code source compilation, the `data`, `data.cal`, `data.diagnos
 
 The `data` file includes four main components: `PARM01`, `PARM02`, `PARM03`, `PARM04` and `PARM05` that hold specifics bloc instructions. The meaning of theses components can be found on the main page of MITgcm. In the present study, we edited the bloc instruction under `PARM03`, `PARM04` and `PARM05` from the default configurations as follow:
 
-| Components | Instructions          | Definitions                                                                   |
-| ---------- | --------------------- | ----------------------------------------------------------------------------- |
-| PARM03     | `startTime=0.0`       | set the simulation starting time as the same as indicated in `data.cal` file. |
-|            | `nTimeSteps= 3456`    | set the                                                                       |
-|            | `deltaTtracer=3600.0` | set the time derivative `dt` to hourly for each variable.                     |
-|            | `deltaTClock =3600.0` | set the time derivative `dt` to hourly for the model time record.             |
-|            | `cAdjFreq=0.`         |                                                                               |
-|            | `abEps=0.1`           |                                                                               |
-|            | `tracForcingOutAB=1`  |                                                                               |
-|            | `pChkptFreq=0.`       |                                                                               |
-|            | `chkptFreq= 0.`       |                                                                               |
-|            | `umpFreq = 86400.`    |                                                                               |
-|            | `taveFreq = 2635000.` |                                                                               |
-|            | `monitorFreq=86400.`  |                                                                               |
-| PARM04     |                       |                                                                               |
-| PARM05     |                       |                                                                               |
+| Components | Instructions                | Definitions                                                                                                                                                                                                  |
+| ---------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| PARM03     | `startTime=0.0`             | set the simulation starting time as the same as indicated in `data.cal` file.                                                                                                                                |
+|            | `nTimeSteps= 3456`          | set the                                                                                                                                                                                                      |
+|            | `deltaTtracer=3600.0`       | set the time derivative `dt` to hourly for each variable.                                                                                                                                                    |
+|            | `deltaTClock =3600.0`       | set the time derivative `dt` to hourly for the model time record.                                                                                                                                            |
+|            | `cAdjFreq=0.`               |                                                                                                                                                                                                              |
+|            | `abEps=0.1`                 |                                                                                                                                                                                                              |
+|            | `tracForcingOutAB=1`        |                                                                                                                                                                                                              |
+|            | `pChkptFreq=0.`             |                                                                                                                                                                                                              |
+|            | `chkptFreq= 0.`             |                                                                                                                                                                                                              |
+|            | `umpFreq = 86400.`          |                                                                                                                                                                                                              |
+|            | `taveFreq = 2635000.`       |                                                                                                                                                                                                              |
+|            | `monitorFreq=86400.`        |                                                                                                                                                                                                              |
+| PARM04     | `usingCartesianGrid=.TRUE.` | -                                                                                                                                                                                                            |
+|            | `dXspacing=5000.`           | -                                                                                                                                                                                                            |
+|            | `dYspacing=5000.`           | -                                                                                                                                                                                                            |
+|            | `delZ`                      | This defines the vertical derivative step value as the model vetical resolution. In our case, `delZ` is to `1` for each vertical level, so that the model vertival resolution is `1 m` over the whole depth. |
+| PARM05     |                             |                                                                                                                                                                                                              |
 
 ### `data.cal` file:
 
 ### `data.diagnoastics` file:
+
+The `data.diagnostics` file specify the variable to saved as output along with the model simulations. See
 
 ### `data.exf` file:
 
@@ -65,33 +68,33 @@ The parameter `SEAICE_mcPheePiston` is set `0.0001` to allow the model to run at
 
 In the results, we include the NetCDF file of the model output for variables used in the present analysis. The NetCDF file include the following variables:
 
-| Name            | Definition                                           |
-| --------------- | ---------------------------------------------------- |
-| `Longitude`     | Longitude coordinates at each cCTD cast locations    |
-| `Latitude`      | Latitude coordinates at each cCTD cast locations     |
-| `Temp`          | Potential temperature                                |
-| `Sal`           | Salinity                                             |
-| `ETA`           | Free surface r-anomaly                               |
-| `Ice_thickness` | Effective ice thickness                              |
-| `Ice_coverage`  | Fractional ice-covered area from FRSEAICE product    |
-| `Ice_EmPmR`     | Net upward freshwater flux                           |
-| `Ice_Qnet`      | Net upward surface heat flux (including shortwave)   |
-| `Ice_Qsw`       | Net upward shortwave radiation                       |
-| `EXFhs`         | Sensible heat flux into ocean, >0 increases theta    |
-| `EXFhl`         | Latent heat flux into ocean, >0 increases theta      |
-| `EXFempmr`      | Net upward freshwater flux, > 0 increases salinity   |
-| `EXFpreci`      | Precipitation, > 0 decreases salinity                |
-| `EXFevap`       | Evaporation, > 0 increases salinity                  |
-| `EXFaqh`        | Surface (2-m) specific humidity                      |
-| `EXFatemp`      | Surface (2-m) air temperature                        |
-| `EXFswdn`       | Downward shortwave radiation, >0 increases theta     |
-| `EXFlwdn`       | Downward longwave radiation, >0 increases theta      |
-| `EXFvwind`      | Meridional 10-m wind speed, >0 increases uVel-       |
-| `EXFuwind`      | Zonal 10-m wind speed, >0 increases uVel             |
-| `EXFqnet`       | Net upward heat flux (turb+rad), >0 decreases theta  |
-| `EXFswnet`      | Net upward shortwave radiation, >0 decreases theta   |
-| `EXFlwnet`      | Net upward longwave radiation, >0 decreases theta    |
-| `SIqnet`        | Ocean surface heatflux, turb+rad, >0 decreases theta |
-| `SIqsw`         | Ocean surface shortwave radiat., >0 decreases theta  |
-| `SIqneto`       | Open Ocean Part of SIqnet, turb+rad, >0 decr theta   |
-| `SIqneti`       | Ice Covered Part of SIqnet, turb+rad, >0 decr theta  |
+| Name            | Definition                                               |
+| --------------- | -------------------------------------------------------- |
+| `Longitude`     | Longitude coordinates at each cCTD cast locations        |
+| `Latitude`      | Latitude coordinates at each cCTD cast locations         |
+| `Temp`          | Potential temperature                                    |
+| `Sal`           | Salinity                                                 |
+| `ETA`           | Free surface r-anomaly                                   |
+| `Ice_thickness` | Effective ice thickness                                  |
+| `Ice_coverage`  | Fractional ice-covered area from FRSEAICE product        |
+| `Ice_EmPmR`     | Net upward freshwater flux                               |
+| `Ice_Qnet`      | Net upward surface heat flux (including shortwave)       |
+| `Ice_Qsw`       | Net upward shortwave radiation                           |
+| `EXFhs`         | Sensible heat flux into ocean, >0 increases theta        |
+| `EXFhl`         | Latent heat flux into ocean, >0 increases theta          |
+| `EXFempmr`      | Net upward freshwater flux, > 0 increases salinity       |
+| `EXFpreci`      | Precipitation, > 0 decreases salinity                    |
+| `EXFevap`       | Evaporation, > 0 increases salinity                      |
+| `EXFaqh`        | Surface (2-m) specific humidity                          |
+| `EXFatemp`      | Surface (2-m) air temperature                            |
+| `EXFswdn`       | Downward shortwave radiation, >0 increases theta         |
+| `EXFlwdn`       | Downward longwave radiation, >0 increases theta          |
+| `EXFvwind`      | Meridional 10-m wind speed, >0 increases uVel            |
+| `EXFuwind`      | Zonal 10-m wind speed, >0 increases uVel                 |
+| `EXFqnet`       | Net upward heat flux (turb+rad), >0 decreases theta      |
+| `EXFswnet`      | Net upward shortwave radiation, >0 decreases theta       |
+| `EXFlwnet`      | Net upward longwave radiation, >0 decreases theta        |
+| `SIqnet`        | Ocean surface heatflux, turb+rad, >0 decreases theta     |
+| `SIqsw`         | Ocean surface shortwave radiat., >0 decreases theta      |
+| `SIqneto`       | Open Ocean Part of SIqnet, turb+rad, >0 decreases theta  |
+| `SIqneti`       | Ice Covered Part of SIqnet, turb+rad, >0 decreases theta |
