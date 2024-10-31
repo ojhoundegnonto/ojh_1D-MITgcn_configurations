@@ -19,6 +19,19 @@ In the present study, the model vetical levels are set to 70. Thus, before the m
 | `timeave`     | This allow the model to save the output at the specified time spet in the `data` configurations file. In our case, the model time step is set to hourly (`deltaTtracer=3600.0` and `deltaTClock =3600.0` in second) and we request the model to save the daily average (`monitorFreq=86400.`, in second) of each variable (cf. `data` file) |
 
 <h2>After Compilation</h2>
+
+After the model's code source compilation, the `data`, `data.cal`, `data.diagnostics`, `data.exf` and `data.seaice` are edited as follow:
+
+### `data` file:
+
+### `data.cal` file:
+
+### `data.diagnoastics` file:
+
+### `data.exf` file:
+
+### `data.seaice` file:
+
 <h1>Results: Example from the present work</h1>
 
 In the results, we include the NetCDF file of the model output for variables used in the present analysis. The NetCDF file include the following variables:
