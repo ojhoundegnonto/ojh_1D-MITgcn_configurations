@@ -1,0 +1,1 @@
+/home/ecco/MITgcm/pkg/mnc/MNC_OPTIONS.h
