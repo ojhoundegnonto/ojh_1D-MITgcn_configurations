@@ -10,6 +10,13 @@ The MITgcm is developed to perform efficiently on a wide variety of computationa
 
 <h1>Configurations for the present work</h1>
 
+For the present work:
+
+- the folder `code` contains codes specific to the `1D ocean ice column model`. The full containt is as follow: `CPP_OPTIONS.h`, `SEAICE_OPTIONS.h`, `diffs.txt`
+  `DIAGNOSTICS_SIZE.h`, `SIZE.h` and `packages.conf`.
+- the folder `buil` contains the compiled model codes with the executable files `mitgcmuv`.
+- the folder `run` contains all required input files including ocean initial conditions data, atmospheric forcing data, bathymerty data and the model configuration files. See the attached folder for cas example from the present work.
+
 <h2>Before Conpilation</h2>
 
 In the present study, the model vetical levels are set to 70. Thus, before the model source code compilation, the file `SIZE.h` was edited so that `Nr = 70`. In addition, the file of `package.conf` was edited with the following content: `gfd`, `kpp`, `seaice`, `exf`, `diagnostics`, `mnc` and `timeave` (see the attached file of `SIZE.h` and `package.conf` in the folder of `code`).
@@ -21,8 +28,10 @@ In the present study, the model vetical levels are set to 70. Thus, before the m
 | `seaice`      | -                                                                                                                                                                                                                                                                                                                                           |
 | `exf`         | This allow the model to read the external forcing data file. In the present, the external forcing data are the atmospheric forcing data.                                                                                                                                                                                                    |
 | `diagnostics` | -                                                                                                                                                                                                                                                                                                                                           |
-| `mnc`         | This allow saving the model output in NetCDF file format                                                                                                                                                                                                                                                                                    |
+| `mnc`         | This allow saving the model output in NetCDF file format.                                                                                                                                                                                                                                                                                   |
 | `timeave`     | This allow the model to save the output at the specified time spet in the `data` configurations file. In our case, the model time step is set to hourly (`deltaTtracer=3600.0` and `deltaTClock =3600.0` in second) and we request the model to save the daily average (`monitorFreq=86400.`, in second) of each variable (cf. `data` file) |
+
+NB: with `mnc` allowed in `package.conf`, the model outputs are save directely inside the folder `run/mnc_test_001`. The sufix `001` depend on how many time the model simulations are lunched. One => `0011`, two => `002`, ...
 
 <h2>After Compilation</h2>
 
