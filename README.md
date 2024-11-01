@@ -41,7 +41,7 @@ So, we did not use the folder of `input` since all required input data are inser
 
 <h2>After Compilation</h2>
 
-After the model's code source compilation, the `data`, `data.cal`, `data.diagnostics`, `data.exf` and `data.seaice` are edited from the default files (from the native folder `Verification`) as follow:
+After the model's code source compilation, the `data`, `data.cal`, `data.diagnostics`, `data.exf` and `data.seaice` are edited from the default files (from the native folder [verification/1D_ocean_ice_column](https://github.com/MITgcm/MITgcm/tree/master/verification/1D_ocean_ice_column)) as follow:
 
 ### `data` file:
 
