@@ -75,9 +75,11 @@ This file holds the model time configurations relative to the starting of the si
 
 ### `data.diagnoastics` file:
 
-The `data.diagnostics` file specify the variable to saved as output along with the model simulations. See
+The `data.diagnostics` file specify the variable to save as output along with the model simulations. See the attached file for example case of the present work.
 
 ### `data.exf` file:
+
+This file is set to specify the atmospheric forcing data. See the attached file for example case of the present work.
 
 ### `data.seaice` file:
 
