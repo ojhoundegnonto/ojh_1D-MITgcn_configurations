@@ -89,6 +89,8 @@ The parameter `SEAICE_mcPheePiston` is set `0.0001` to allow the model to run at
 
 In the results, we include the NetCDF file of the model output for variables used in the present analysis. The NetCDF file include the following variables:
 
+<div align="center">
+
 | Name            | Definition                                               |
 | --------------- | -------------------------------------------------------- |
 | `Longitude`     | Longitude coordinates at each cCTD cast locations        |
@@ -119,3 +121,5 @@ In the results, we include the NetCDF file of the model output for variables use
 | `SIqsw`         | Ocean surface shortwave radiat., >0 decreases theta      |
 | `SIqneto`       | Open Ocean Part of SIqnet, turb+rad, >0 decreases theta  |
 | `SIqneti`       | Ice Covered Part of SIqnet, turb+rad, >0 decreases theta |
+
+</div>
