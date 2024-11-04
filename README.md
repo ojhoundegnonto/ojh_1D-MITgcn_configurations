@@ -34,7 +34,7 @@ In the present study, the model vetical levels are set to 70. Thus, before the m
 NB: with `mnc` allowed in `package.conf`, the model outputs are save directely inside the folder `run/mnc_test_001`. The sufix `001` depend on how many time the model simulations are lunched:
 
 <div align="center">
-- One time => `mnc_test_001` ; two times => `mnc_test_002`, ...
+<ul> One time => `mnc_test_001` ; two times => `mnc_test_002`, ...</ul>
 </div>
 
 So, we did not use the folder of `input` since all required input data are inserted into `run`. See the [4. MITgcm Tutorial Example Experiments](https://mitgcm.readthedocs.io/en/latest/examples/examples.html) of the main MITgcm page for more detail.
