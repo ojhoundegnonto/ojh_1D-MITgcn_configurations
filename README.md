@@ -4,7 +4,7 @@ The MIT General Circulation Model (MITgcm) is a sophisticated computational tool
 
 <h1>How to install?</h1>
 
-The MITgcm is developed to perform efficiently on a wide variety of computational platforms. The processes to build and run the MITgcm is described on the MITgcm main page ([here](https://mitgcm.readthedocs.io/en/latest/overview/overview.html)) under the sections `3. getting Started with MITgcm` [here](https://mitgcm.readthedocs.io/en/latest/getting_started/getting_started.html) and `4. MITgcm Tutorial Example Experiments` [here](https://mitgcm.readthedocs.io/en/latest/examples/examples.html). For the purpose of our analysis, the model compiled and run inside a `Docker` image set to host the latest stable version of `Ubunto` OS. The `Docker` image configuration is provided below.
+The MITgcm is developed to perform efficiently on a wide variety of computational platforms. The processes to build and run the MITgcm is described on the MITgcm main page ([here](https://mitgcm.readthedocs.io/en/latest/overview/overview.html)) under the sections `3. getting Started with MITgcm` ([here](https://mitgcm.readthedocs.io/en/latest/getting_started/getting_started.html)) and `4. MITgcm Tutorial Example Experiments` ([here](https://mitgcm.readthedocs.io/en/latest/examples/examples.html)). For the purpose of our analysis, the model compiled and run inside a `Docker` image set to host the latest stable version of `Ubunto` OS. The `Docker` image configuration is provided below.
 
 <h1>Docker image to run the 1D ocean-ice column model</h1>
 
@@ -12,7 +12,7 @@ The MITgcm is developed to perform efficiently on a wide variety of computationa
 
 For the present work:
 
-- the folder `code` contains codes specific to the `1D ocean ice column model`. The full containt is as follow: `CPP_OPTIONS.h`, `SEAICE_OPTIONS.h`, `diffs.txt`
+- the folder `code` contains codes specific to the `1D ocean ice column model`. The full content is as follow: `CPP_OPTIONS.h`, `SEAICE_OPTIONS.h`, `diffs.txt`
   `DIAGNOSTICS_SIZE.h`, `SIZE.h` and `packages.conf`.
 - the folder `buil` contains the compiled model codes with the executable files `mitgcmuv`.
 - the folder `run` contains all required input files including ocean initial conditions data, atmospheric forcing data, bathymerty data and the model configuration files. See the attached folder for cas example from the present work.
