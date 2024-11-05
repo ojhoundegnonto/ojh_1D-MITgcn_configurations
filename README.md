@@ -8,6 +8,8 @@ The MITgcm is developed to perform efficiently on a wide variety of computationa
 
 <h1>Docker image to run the 1D ocean-ice column model</h1>
 
+The 1D MITgcm ocean-ice column simulations were performed using a Docker image. The Docker image was built from ECCO-v4r4 Docker image that can be foud `here`!!.
+
 <h1>Configurations for the present work</h1>
 
 For the present work:
