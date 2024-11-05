@@ -83,6 +83,8 @@ This file is set to specify the atmospheric forcing data. See the attached file 
 
 The parameter `SEAICE_mcPheePiston` is set `0.0001` to allow the model to run at `1 m` vertical resolution. Note that the default setiing is: `SEAICE_mcPheePiston= 0.0008749999999999999`.
 
+All configurations files of `data`,`data.cal`, `data.diagnoastics`, `data.exf` and `data.seaice` can found in the folder `Config_files`.
+
 <h1>Results: Example from the present work</h1>
 
-In the results, we include the NetCDF file of the model output for variables used in the present analysis.
+In the folder `data_and_output`, we include the NetCDF file of the model output for variables used in the present analysis. It also contains the atmospheric forcing data that we used (see: ).
