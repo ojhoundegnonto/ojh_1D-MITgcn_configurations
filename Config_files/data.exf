@@ -1,0 +1,110 @@
+#
+# *********************
+# External Forcing Data
+# *********************
+ &EXF_NML_01
+#
+ useExfCheckRange   = .TRUE.,
+#useExfYearlyFields = .TRUE.,
+#repeatPeriod       = 31622400.0,
+ repeatPeriod       = 0.0,
+ exf_iprec          = 32,
+#
+ &
+
+# *********************
+ &EXF_NML_02
+#
+ hfluxstartdate1   = 20220901,
+ hfluxstartdate2   = 000000,
+ hfluxperiod       = 86400.0,
+#
+ sfluxstartdate1   = 20220901,
+ sfluxstartdate2   = 000000,
+ sfluxperiod       = 86400.0,
+#
+ ustressstartdate1 = 20220901,
+ ustressstartdate2 = 000000,
+ ustressperiod     = 86400.0,
+#
+ vstressstartdate1 = 20220901,
+ vstressstartdate2 = 000000,
+ vstressperiod     = 86400.0,
+#
+ atempstartdate1   = 20220901,
+ atempstartdate2   = 000000,
+ atempperiod       = 86400.0,
+#atempperiod       = 86400.0,
+#
+ aqhstartdate1     = 20220901,
+ aqhstartdate2     = 000000,
+ aqhperiod         = 86400.0,
+#
+ evapstartdate1    = 20220901,
+ evapstartdate2    = 000000,
+ evapperiod        = 86400.0,
+#
+ precipstartdate1  = 20220901,
+ precipstartdate2  = 000000,
+ precipperiod      = 86400.0,
+#
+ uwindstartdate1   = 20220901,
+ uwindstartdate2   = 000000,
+ uwindperiod       = 86400.0,
+#
+ vwindstartdate1   = 20220901,
+ vwindstartdate2   = 000000,
+ vwindperiod       = 86400.0,
+#
+ swfluxstartdate1  = 20220901,
+ swfluxstartdate2  = 000000,
+ swfluxperiod      = 86400.0,
+#
+ lwfluxstartdate1  = 20220901,
+ lwfluxstartdate2  = 000000,
+ lwfluxperiod      = 86400.0,
+#
+ swdownstartdate1  = 20220901,
+ swdownstartdate2  = 000000,
+ swdownperiod      = 86400.0,
+ swdownperiod = 86400.0,
+#
+ lwdownstartdate1  = 20220901,
+ lwdownstartdate2  = 000000,
+ lwdownperiod      = 86400.0,
+ lwdownperiod = 86400.0,
+#
+# climsststartdate1  = 20220901,
+# climsststartdate2  = 000000,
+# climsstperiod      = 86400.0,
+# climsstTauRelax    = 0.0,
+#
+# climsssstartdate1  = 20220901,
+# climsssstartdate2  = 000000,
+# climsssperiod      = 86400.0,
+# climsssTauRelax    = 4142330.0,
+#
+ hfluxfile         = ' ',
+ sfluxfile         = ' ',
+ aqhfile           ='qv2m_1x1_four_months_Lon_149.96W_Lat_72.98N.bin',
+ ustressfile       =' ',
+ vstressfile       =' ',
+ precipfile        ='precipcorr_1x1_four_months_Lon_149.96W_Lat_72.98N.bin',
+# evapfile          ='evap_1x1_four_months.bin',
+ atempfile         ='atemp_1x1_four_months_Lon_149.96W_Lat_72.98N.bin',
+ lwdownfile        ='lwgab_1x1_four_months_Lon_149.96W_Lat_72.98N.bin',
+ swdownfile        ='swgdn_1x1_four_months_Lon_149.96W_Lat_72.98N.bin',
+ uwindfile         ='u_10m_1x1_four_months_Lon_149.96W_Lat_72.98N.bin',
+ vwindfile         ='v_10m_1x1_four_months_Lon_149.96W_Lat_72.98N.bin',
+ lwfluxfile        = ' ',
+ swfluxfile        = ' ',
+ runoffFile        = ' ',
+ &
+
+# *********************
+ &EXF_NML_03
+ &
+
+# *********************
+ &EXF_NML_04
+ &
