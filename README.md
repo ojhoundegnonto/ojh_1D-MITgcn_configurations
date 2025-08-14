@@ -89,6 +89,6 @@ The parameter `SEAICE_mcPheePiston` is set `0.0001` to allow the model to run at
 
 All configurations files of `data`,`data.cal`, `data.diagnoastics`, `data.exf` and `data.seaice` can found in the folder `Config_files`.
 
-<h1>Results: output from simulations</h1>
+<!-- <h1>Results: output from simulations</h1> -->
 
-In the folder `data_and_output`, we include the NetCDF file of the model output for variables used in the present analysis. It also contains the atmospheric forcing data that we used (see: ).
+<!-- In the folder `data_and_output`, we include the NetCDF file of the model output for variables used in the present analysis. It also contains the atmospheric forcing data that we used (see: ).-->
